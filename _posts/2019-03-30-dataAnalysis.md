@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Learn_Pytorch
+title:  Analysis data
 category: 2019_1_project 
 description: Analysis data!
 ---
