@@ -1,62 +1,228 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Jeongseop Han Apps</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                         Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #7f8c8d;
+            margin-top: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .contact {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .effective-date {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
 
-<div class="home">
-  <div class="post-list">
+    <p><strong>Jeongseop Han Apps</strong> values your privacy and complies with
+    applicable privacy laws and regulations. This Privacy Policy applies to all game
+    applications provided by us.</p>
 
-    {% for post in site.posts limit:5%}
+    <h2>1. Personal Information We Collect</h2>
+    <p>We collect the following information to provide our game services:</p>
 
-    <article class="post_card post">
-      <header class="post_header">
-        <h2 class="post_title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a></h2>
-        <time class="post_date">{{ post.date | date: "%d %B %Y, %A" }}</time>
-      </header>
-      <div class="post_excerpt">
-        <p>
-          {% if post.description %}
-          {{ post.description}}
-          {% else %}
-          {{ post.excerpt }}
-          {% endif %} 
-          <a class="read-more" href="{{ post.url | prepend: site.baseurl }}"> »  </a>
-        </p> 
-      </div>
-      <footer class="post_meta">
+    <h3>1.1 Required Information</h3>
+    <ul>
+        <li><strong>Device Unique Identifier (UUID):</strong> Collected for user
+        identification and game session management</li>
+        <li><strong>Gameplay Data:</strong> Multiplayer game progress information
+        via websocket communication</li>
+        <li><strong>Game Progress:</strong> User's game level, scores, achievements, etc.</li>
+    </ul>
 
+    <h3>1.2 Automatically Collected Information</h3>
+    <ul>
+        <li><strong>Device Information:</strong> Operating system version, device model,
+        language settings</li>
+        <li><strong>Log Information:</strong> App usage time, error logs, performance data</li>
+        <li><strong>Advertising Identifier:</strong> Advertising ID for AdMob advertising
+        services</li>
+    </ul>
 
-        {% if post.location %}
-        <span class="author-location">
-          <div data-icon="ei-location"></div>
-          <a href=https://www.google.com/maps/place/{{post.location}}">{{ post.location }}</a>
-        </span>
-        {% endif %}
-        <!--
-        {% for category in post.categories %}
-        <a href="{{"/category/" | append: category | prepend: site.baseurl }}">
-          <data data-icon="ei-archive"></data>
-          {{category}}</a>
-        {% endfor %}
-        -->
+    <h2>2. Purpose of Collection and Use</h2>
+    <p>The collected personal information is used only for the following purposes:</p>
+    <ul>
+        <li><strong>Game Service Provision:</strong> Operating real-time multiplayer games
+        based on websocket technology</li>
+        <li><strong>User Identification:</strong> Distinguishing and matching users through
+        device unique identifiers</li>
+        <li><strong>Game Data Synchronization:</strong> Saving and restoring game progress</li>
+        <li><strong>Service Improvement:</strong> Enhancing user experience and fixing bugs</li>
+        <li><strong>Advertisement Delivery:</strong> Personalized advertising services
+        through AdMob</li>
+        <li><strong>Statistical Analysis:</strong> Service usage statistics and performance
+        optimization</li>
+    </ul>
 
-        <!--
-        {% if post.author %}
-        <span class="author_meta">
-          <img src="{{site.baseurl}}/assets/img/{{post.author}}.jpg"></img>
-          <span>David Lin</span>
-        </span>
-        {% endif %}
-        -->
+    <h2>3. Retention and Use Period</h2>
+    <ul>
+        <li><strong>Game Data:</strong> Stored locally on the device until app deletion</li>
+        <li><strong>Server Data:</strong> Retained until the user deletes the app or requests
+        account deletion</li>
+        <li><strong>Log Data:</strong> Automatically deleted after a maximum of 6 months from
+        collection</li>
+        <li><strong>Legal Retention:</strong> Retained for the period required by applicable
+        laws when necessary</li>
+    </ul>
 
-        <!--p class="readmore">
-          <a href=""><data data-icon="ei-arrow-right"></data>Read this article  </a>
-        </p-->
-      </footer>
-      <hr/>
-    </article>
-    {% endfor %}
+    <h2>4. Third-Party Disclosure and Sharing</h2>
+    <p>We do not provide your personal information to third parties in principle. However,
+    exceptions are made in the following cases:</p>
 
-    <div class="pagination older-post"><a href="./archive"><data data-icon="ei-arrow-right"></data> Archive  </a></div>
-  </div>
-</div>
+    <h3>4.1 Third-Party Services</h3>
+    <p>We use the following third-party services, and each service follows its own privacy
+    policy:</p>
+
+    <h4>Google AdMob</h4>
+    <ul>
+        <li><strong>Purpose:</strong> Advertising service provision</li>
+        <li><strong>Information Provided:</strong> Advertising identifier, device information,
+        usage patterns</li>
+        <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy">
+        https://policies.google.com/privacy</a></li>
+    </ul>
+
+    <h3>4.2 Legal Requirements</h3>
+    <ul>
+        <li>When required by law</li>
+        <li>When necessary for the benefit of a user's life, body, property, etc.</li>
+    </ul>
+
+    <h2>5. Destruction of Personal Information</h2>
+    <p>When the retention period expires or the purpose of processing is achieved, we destroy
+    the information as follows:</p>
+    <ul>
+        <li><strong>Destruction Procedure:</strong> Safely destroyed according to internal policies</li>
+        <li><strong>Destruction Method:</strong> Electronic files deleted by irreversible methods,
+        paper documents shredded or incinerated</li>
+        <li><strong>User Request:</strong> Local data can be deleted at any time by uninstalling
+        the app</li>
+    </ul>
+
+    <h2>6. Technical and Administrative Measures for Privacy Protection</h2>
+    <p>We take the following measures to safely protect your personal information:</p>
+
+    <h3>6.1 Technical Measures</h3>
+    <ul>
+        <li><strong>Data Encryption:</strong> Use of encryption protocols during websocket
+        communication</li>
+        <li><strong>Security Protocols:</strong> Secure data transmission through SSL/TLS</li>
+        <li><strong>Access Control:</strong> Restricted access to servers and databases</li>
+    </ul>
+
+    <h3>6.2 Administrative Measures</h3>
+    <ul>
+        <li><strong>Minimum Privilege Principle:</strong> Collecting only the minimum necessary
+        personal information</li>
+        <li><strong>Regular Inspection:</strong> Regular inspection of security vulnerabilities
+        and personal information processing status</li>
+        <li><strong>Internal Management Plan:</strong> Establishment and implementation of internal
+        management plans for privacy protection</li>
+    </ul>
+
+    <h2>7. User Rights</h2>
+    <p>Users can exercise the following rights at any time:</p>
+    <ul>
+        <li><strong>Request Access to Personal Information:</strong> Request to view collected
+        personal information</li>
+        <li><strong>Request Correction of Personal Information:</strong> Request correction of
+        incorrect information</li>
+        <li><strong>Request Deletion of Personal Information:</strong> Request deletion of
+        collected information</li>
+        <li><strong>Request Suspension of Processing:</strong> Request temporary suspension of
+        personal information processing</li>
+        <li><strong>App Deletion:</strong> Immediately delete all locally stored data by
+        uninstalling the app</li>
+    </ul>
+    <p>To exercise your rights, please contact us using the contact information below.</p>
+
+    <h2>8. Protection of Personal Information of Children Under 15</h2>
+    <p>Our services are intended for users <strong>aged 15 and above</strong>.</p>
+    <ul>
+        <li>We do not intentionally collect personal information from children under 15 years
+        of age</li>
+        <li>If it is confirmed that personal information of a child under 15 has been collected,
+        it will be deleted immediately</li>
+        <li>If parents or legal guardians become aware of the collection of their child's
+        personal information, please contact us immediately</li>
+    </ul>
+
+    <h2>9. Cookies and Similar Technologies</h2>
+    <p>We may use the following technologies to improve our services:</p>
+    <ul>
+        <li><strong>Session Management:</strong> Maintaining websocket connections and managing
+        game sessions</li>
+        <li><strong>Local Storage:</strong> Saving game settings and progress</li>
+        <li><strong>Analytics Tools:</strong> Analyzing app usage patterns and performance
+        monitoring</li>
+    </ul>
+
+    <h2>10. Changes to the Privacy Policy</h2>
+    <p>This Privacy Policy may be modified in accordance with changes in laws and services:</p>
+    <ul>
+        <li>Changes will be notified at least <strong>7 days</strong> before the effective date
+        through in-app notices or email</li>
+        <li>For significant changes, advance notice will be given 30 days prior</li>
+        <li>If users do not agree with the changes, they may discontinue using the service and
+        delete the app</li>
+    </ul>
+
+    <h2>11. Privacy Officer and Contact Information</h2>
+    <p>For inquiries, complaints, or remedies regarding personal information processing, please
+    contact us at:</p>
+
+    <div class="contact">
+        <p><strong>Privacy Officer:</strong> Jeongseop Han (Brian Han)<br>
+        <strong>Email:</strong> brian.jeongseop.han@gmail.com</p>
+    </div>
+
+    <p>For reporting or consulting about other personal information violations, you can contact
+    the following organizations:</p>
+    <ul>
+        <li>Personal Information Infringement Report Center (privacy.kisa.or.kr / 118 without
+        area code)</li>
+        <li>Personal Information Dispute Mediation Committee (www.kopico.go.kr / 1833-6972)</li>
+        <li>Supreme Prosecutors' Office Cyber Investigation Department (www.spo.go.kr / 1301
+        without area code)</li>
+        <li>National Police Agency Cyber Safety Bureau (cyberbureau.police.go.kr / 182 without
+        area code)</li>
+    </ul>
+
+    <p class="effective-date"><strong>Effective Date:</strong> January 5, 2026</p>
+</body>
+</html>
